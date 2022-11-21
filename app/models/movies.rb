@@ -1,4 +1,4 @@
 class Movie < ActiveRecord::Base
-    belongs_to :directors
+    belongs_to :director
     has_many :monsters
 end

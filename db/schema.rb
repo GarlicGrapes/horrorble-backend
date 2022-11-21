@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_21_031907) do
+ActiveRecord::Schema.define(version: 2022_11_21_032802) do
 
   create_table "directors", force: :cascade do |t|
     t.string "name"
@@ -19,11 +19,13 @@ ActiveRecord::Schema.define(version: 2022_11_21_031907) do
   create_table "monsters", force: :cascade do |t|
     t.string "name"
     t.integer "weight"
+    t.integer "movie_id"
   end
 
   create_table "movies", force: :cascade do |t|
     t.string "title"
     t.integer "release_year"
+    t.integer "director_id"
   end
 
 end
