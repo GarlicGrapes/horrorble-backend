@@ -27,6 +27,7 @@ class ApplicationController < Sinatra::Base
 
   post "/directors" do 
     director = Director.create(name: params[:name])
+    director.to_json
   end
 
   # delete "/directors/:id" do
