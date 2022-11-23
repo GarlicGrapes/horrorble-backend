@@ -24,17 +24,17 @@ sad_plants = Movie.create(title: "The Happening", release_year: 2008, director: 
 puts "👹 Creating Monsters..."
 
 pig_man = Monster.create(name: "Pig Man", movie: it_takes_a)
-scary_clown = Monster.create(name: "Pennywise", movie: hungry_clown_movie)
-evil_gf = Monster.create(name: "Evil GF", movie: get_out)
-evil_gf_dad_scary_doctor = Monster.create(name: "Evil Scary GF's Dad Doctor Man", movie: get_out)
-evil_gf_mom = Monster.create(name: "Hypnosis Lady", movie: get_out)
+scary_clown = Monster.create(name: "Pennywise", movie: hungry_clown_movie, img_url:"https://compote.slate.com/images/26572c3a-0e51-4a9f-9049-b64e730ca75d.jpg")
+evil_gf = Monster.create(name: "Evil GF", movie: get_out, img_url:"https://media.gq-magazine.co.uk/photos/5d1398a77fcc8eb13b81fe97/3:4/w_960,h_1280,c_limit/Allison-Williams-GQ-10Apr17_rex_b.jpg")
+evil_gf_dad_scary_doctor = Monster.create(name: "Evil Scary GF's Dad Doctor Man", movie: get_out, img_url:"https://www.google.com/imgres?imgurl=https%3A%2F%2Fcitizensclimatelobby.org%2Fwp-content%2Fuploads%2F2017%2F02%2FBradleyWhitfordPremiereVerticalEntertainmentM13bcfcD6J2l.jpg&imgrefurl=https%3A%2F%2Fcitizensclimatelobby.org%2Fabout-ccl%2Fadvisory-board%2Fbradley-whitford%2F&tbnid=m-t1-Sqri3lOwM&vet=12ahUKEwj3r_-Gv8T7AhUBZTUKHeY6BSkQMygHegUIARD2AQ..i&docid=HaA3DLKdjsoX-M&w=300&h=350&q=Bradley%20Whitford&ved=2ahUKEwj3r_-Gv8T7AhUBZTUKHeY6BSkQMygHegUIARD2AQ")
+evil_gf_mom = Monster.create(name: "Hypnosis Lady", movie: get_out, img_url:"https://m.media-amazon.com/images/M/MV5BMjIwMzQ1Mzg1MF5BMl5BanBnXkFtZTcwNTE4MTU5MQ@@._V1_UX178_CR0,0,178,264_AL_.jpg")
 evil_gf_grandpa_bodysnatcher = Monster.create(name: "Bodysnatcher", movie: get_out)
-literally_plants = Monster.create(name: "Plants", movie: sad_plants)
+literally_plants = Monster.create(name: "Plants", movie: sad_plants, img_url: "https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_bird-of-paradise_large_upcycled_stonewash.jpg?v=1660319820&width=400")
 scary_you = Monster.create(name: "Upside-down you", movie: us)
 scary_me = Monster.create(name: "Upside-down me", movie: us)
-little_zambie = Monster.create( name: "Little boy", movie: not_your_graveyard_movie)
-zambie_cat = Monster.create( name: "Mean Kitty", movie: not_your_graveyard_movie)
-lonely_man = Monster.create(name: "Johnny", movie: shutin_movie )
+little_zambie = Monster.create( name: "Little boy", movie: not_your_graveyard_movie, img_url:"https://bloody-disgusting.com/wp-content/uploads/2019/06/pet-sematary-night-terrors.png")
+zambie_cat = Monster.create( name: "Mean Kitty", movie: not_your_graveyard_movie, img_url:"https://nypost.com/wp-content/uploads/sites/2/2019/04/pet-sematary-cat-2a.jpg?quality=75&strip=all")
+lonely_man = Monster.create(name: "Johnny", movie: shutin_movie, img_url: "https://i.ytimg.com/vi/d-ABIIZV3vA/maxresdefault.jpg")
 
 
 puts "✅ Done seeding!"
