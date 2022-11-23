@@ -11,7 +11,7 @@ class ApplicationController < Sinatra::Base
     movies.to_json
   end
 
-  get "/movies/:id/monsters"
+  get "/movies/:id/monsters" do
     monsters = Movie.find(params[:id]).monsters
     monsters.to_json
   end
@@ -43,11 +43,5 @@ class ApplicationController < Sinatra::Base
     director = Director.create(name: params[:name])
     director.to_json
   end
-
-  # delete "/directors/:id" do
-  #   director = Director.find(params[:id])
-  #   director.destroy
-  # end
-
 
 end
