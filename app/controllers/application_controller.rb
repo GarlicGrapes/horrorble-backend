@@ -22,7 +22,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/movies" do
-    movie = Movie.create(title: params[:title], release_year: params[:release_year], director_id: params[:director_id])
+    movie = Movie.create(title: params[:title], release_year: params[:release_year], director_id: params[:director_id], poster_url: params[:poster_url])
     movie.to_json
   end
 
