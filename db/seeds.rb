@@ -19,7 +19,7 @@ hungry_clown_movie = Movie.create(title: "It", release_year: 1986, director: kin
 shutin_movie = Movie.create(title: "The Shining", release_year: 1980, director: kubrick, watched: true, poster_url: "https://en.wikipedia.org/wiki/File:The_Shining_(1980)_U.K._release_poster_-_The_tide_of_terror_that_swept_America_IS_HERE.jpg")
 not_your_graveyard_movie = Movie.create(title: "Pet Sematary", release_year: 2019, director: king, watched: false, poster_url: "https://m.media-amazon.com/images/M/MV5BZTgxMGQwM2UtZTAxNi00M2JhLTk4ZTgtZmFlODI0NmI3ZDViXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg")
 it_takes_a = Movie.create(title: "The Village", release_year: 2004, director: twisty, watched: true, poster_url: "https://en.wikipedia.org/wiki/File:The_Village_movie.jpg")
-sad_plants = Movie.create(title: "The Happening", release_year: 2008, director: twisty, watched: true, poster_url: "https://en.wikipedia.org/wiki/File:Happening_poster.jpg")
+sad_plants = Movie.create(title: "The Happening", release_year: 2008, director: twisty, watched: true, poster_url: "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/cb57b0b660b8723e21c5f2e52b5ed112_20de79a1-a756-4129-9432-59a6a69e251a_480x.progressive.jpg?v=1573584383")
 
 puts "👹 Creating Monsters..."
 
