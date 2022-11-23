@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2022_11_23_051022) do
     t.integer "release_year"
     t.integer "director_id"
     t.boolean "watched"
+    t.string "poster_url"
   end
 
 end
