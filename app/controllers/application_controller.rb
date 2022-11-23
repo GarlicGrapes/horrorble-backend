@@ -5,5 +5,34 @@ class ApplicationController < Sinatra::Base
   get "/" do
     { message: "Good luck with your project!" }.to_json
   end
+  get "/movies" do 
+    movies = Movie.all
+    movies.to_json
+  end
+
+  post "/movies" do
+    movie = Movie.create(title: params[:title], release_year: params[:release_year], director_id: params[:director_id])
+    movie.to_json
+  end
+
+  delete "/movies/:id" do
+    movie = Movie.find(params[:id])
+    movie.destroy
+  end
+
+  get "/directors" do
+    directors = Director.all
+    directors.to_json
+  end
+
+  post "/directors" do 
+    director = Director.create(name: params[:name])
+  end
+
+  # delete "/directors/:id" do
+  #   director = Director.find(params[:id])
+  #   director.destroy
+  # end
+
 
 end
