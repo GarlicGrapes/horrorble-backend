@@ -13,13 +13,13 @@ kubrick = Director.create(name: "Stanley Kubrick")
 
 puts "🎥 Creating Movies..."
 
-get_out = Movie.create(title: "Get Out", release_year: 2017, director: peele)
-us = Movie.create(title: "Us", release_year: 2019, director: peele)
-hungry_clown_movie = Movie.create(title: "It", release_year: 1986, director: king)
-shutin_movie = Movie.create(title: "The Shining", release_year: 1980, director: kubrick)
-not_your_graveyard_movie = Movie.create(title: "Pet Sematary", release_year: 2019, director: king)
-it_takes_a = Movie.create(title: "The Village", release_year: 2004, director: twisty)
-sad_plants = Movie.create(title: "The Happening", release_year: 2008, director: twisty)
+get_out = Movie.create(title: "Get Out", release_year: 2017, director: peele, watched: true)
+us = Movie.create(title: "Us", release_year: 2019, director: peele, watched: true)
+hungry_clown_movie = Movie.create(title: "It", release_year: 1986, director: king, watched: false)
+shutin_movie = Movie.create(title: "The Shining", release_year: 1980, director: kubrick, watched: true)
+not_your_graveyard_movie = Movie.create(title: "Pet Sematary", release_year: 2019, director: king, watched: false)
+it_takes_a = Movie.create(title: "The Village", release_year: 2004, director: twisty, watched: true)
+sad_plants = Movie.create(title: "The Happening", release_year: 2008, director: twisty, watched: true)
 
 puts "👹 Creating Monsters..."
 
