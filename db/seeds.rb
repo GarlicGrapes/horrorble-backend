@@ -25,10 +25,15 @@ puts "👹 Creating Monsters..."
 
 pig_man = Monster.create(name: "Pig Man", movie: it_takes_a)
 scary_clown = Monster.create(name: "Pennywise", movie: hungry_clown_movie)
-white_people = Monster.create(name: "White People", movie: get_out)
+evil_gf = Monster.create(name: "Evil GF", movie: get_out)
+evil_gf_dad_scary_doctor = Monster.create(name: "Evil Scary GF's Dad Doctor Man", movie: get_out)
+evil_gf_mom = Monster.create(name: "Hypnosis Lady", movie: get_out)
+evil_gf_grandpa_bodysnatcher = Monster.create(name: "Bodysnatcher", movie: get_out)
 literally_plants = Monster.create(name: "Plants", movie: sad_plants)
 scary_you = Monster.create(name: "Upside-down you", movie: us)
+scary_me = Monster.create(name: "Upside-down me", movie: us
 little_zambie = Monster.create( name: "Little boy", movie: not_your_graveyard_movie)
+zambie_cat = Monster.create( name: "Mean Kitty", movie: not_your_graveyard_movie)
 lonely_man = Monster.create(name: "Johnny", movie: shutin_movie )
 
 
