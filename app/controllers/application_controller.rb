@@ -11,6 +11,11 @@ class ApplicationController < Sinatra::Base
     movies.to_json
   end
 
+  get "/movies/:id/monsters"
+    monsters = Movie.find(params[:id]).monsters
+    monsters.to_json
+  end
+
   post "/movies" do
     movie = Movie.create(title: params[:title], release_year: params[:release_year], director_id: params[:director_id])
     movie.to_json
